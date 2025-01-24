@@ -15,6 +15,6 @@ class Segment extends Model
     ];
 
     public function clients() {
-        $this->belongsToMany(Client::class, 'clients', 'client_id');
+        return $this->belongsToMany(Client::class, 'client_segment')->withTimestamps();
     }
 }

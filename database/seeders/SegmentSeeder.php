@@ -20,9 +20,6 @@ class SegmentSeeder extends Seeder
             'name' => 'Bussiness Consulting'
         ]);
         Segment::create([
-            'name' => 'Owned Vanue'
-        ]);
-        Segment::create([
             'name' => 'Operating The Bussiness'
         ]);
     }
