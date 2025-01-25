@@ -39,11 +39,12 @@ class ClientResource extends Resource
                     ->schema([
                         TextInput::make('name')
                             ->label('Name')
-                            ->placeholder('Client Name')
+                            ->placeholder('Client name')
                             ->required(),
                         TextInput::make('socmed_url')
                             ->label('Social Media')
-                            ->placeholder('Client Social Media URL')
+                            ->url()
+                            ->placeholder('Client social media URL')
                             ->helperText('e.g https://instagram.com/jaiamedia')
                             ->required(),
                         CheckboxList::make('segments')
@@ -57,6 +58,7 @@ class ClientResource extends Resource
                             ->image()
                             ->imageEditor()
                             ->required()
+                            ->directory('client/logo')
                             ->maxSize(1024),
                         FileUpload::make('background_url')
                             ->label('Logo Background')
@@ -64,10 +66,11 @@ class ClientResource extends Resource
                             ->image()
                             ->imageEditor()
                             ->required()
+                            ->directory('client/logo-background')
                             ->maxSize(1024),
                         Textarea::make('description')
                             ->label('Description')
-                            ->placeholder('Client Description')
+                            ->placeholder('Client description')
                             ->rows(5)
                             ->characterLimit(250)
                             ->maxLength(250)
