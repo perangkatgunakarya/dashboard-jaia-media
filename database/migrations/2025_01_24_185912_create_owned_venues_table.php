@@ -11,13 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('owned_venues', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('name');
+            $table->string('slug');
             $table->string('logo_url');
-            $table->string('background_url');
-            $table->string('socmed_url');
-            $table->tinyText('description');
+            $table->string('jumbotron_url');
+            $table->text('overview_text');
+            $table->string('overview_image_url');
+            $table->text('galleries');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('owned_venues');
     }
 };

@@ -48,7 +48,7 @@ class ClientResource extends Resource
                             ->helperText('e.g https://instagram.com/jaiamedia')
                             ->required(),
                         CheckboxList::make('segments')
-                            ->relationship('segments', 'name')// 'name' adalah kolom yang ingin ditampilkan
+                            ->relationship('segments', 'name')
                             ->required()
                             ->helperText('Check the option where the client segment is assigned.')
                             ->columnSpanFull(),
@@ -85,11 +85,16 @@ class ClientResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->label('Name'),
+                    ->label('Name')
+                    ->searchable(),
                 ImageColumn::make('logo_url')
                     ->label('Logo')
                     ->alignCenter()
                     ->extraAttributes(['class' => 'logo-background']),
+                TextColumn::make('segments.name')
+                    ->listWithLineBreaks()
+                    ->bulleted()
+                    ->searchable(),
                 LinkButtonColumn::make('socmed_url')
                     ->label('Socmed Link')
                     ->alignCenter()

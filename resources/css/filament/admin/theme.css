@@ -3,7 +3,11 @@
 @config 'tailwind.config.js';
 
 .logo-background {
-    @apply bg-gray-300 dark:bg-gray-700 w-6/12 flex justify-center;
+    @apply bg-gray-300 dark:bg-gray-700 px-8 flex justify-center;
+}
+
+.logo-background img {
+    @apply max-w-[200px] object-contain;
 }
 
 .column-button-link {
