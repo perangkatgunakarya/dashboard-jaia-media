@@ -3,7 +3,7 @@
 @config 'tailwind.config.js';
 
 .logo-background {
-    @apply bg-gray-300 dark:bg-gray-700 px-8 flex justify-center;
+    @apply bg-[#333] px-8 flex justify-center w-8/12;
 }
 
 .logo-background img {

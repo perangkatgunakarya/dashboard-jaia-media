@@ -13,6 +13,11 @@ class OwnedVenue extends Model
         'galleries' => 'array'
     ];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     protected $fillable = [
         'name',
         'slug',

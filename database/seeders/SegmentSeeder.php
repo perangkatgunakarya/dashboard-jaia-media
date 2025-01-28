@@ -17,10 +17,10 @@ class SegmentSeeder extends Seeder
             'name' => 'Media Consulting'
         ]);
         Segment::create([
-            'name' => 'Bussiness Consulting'
+            'name' => 'Business Consulting'
         ]);
         Segment::create([
-            'name' => 'Operating The Bussiness'
+            'name' => 'Operating The Business'
         ]);
     }
 }
