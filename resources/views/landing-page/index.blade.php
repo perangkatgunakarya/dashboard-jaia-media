@@ -204,11 +204,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             new Splide('#client .splide', {
                 type: 'loop',
-                perPage: 2,
                 perMove: 1,
+                autoWidth: true,
+                gap: '5rem',
                 focus: 'center',
                 direction: 'rtl',
-                drag: 'free',
                 interval: 5000,
                 autoplay: true,
                 arrows: false,
@@ -216,19 +216,23 @@
                 mediaQuery: 'min',
                 breakpoints: {
                     640: {
-                        perPage: 4,
+                        gap: '7rem',
+                        
                     },
                     768: {
-                        perPage: 4,
+                        gap: '6rem',
+                        
                     },
                     1024: {
-                        perPage: 4,
+                        gap: '8rem',
+                        
                     },
                     1536: {
-                        perPage: 4,
+                        gap: '12rem',
+                        
                     },
                     2000: {
-                        perPage: 6,
+                        gap: '18em',
                     },
                 },
             }).mount();
