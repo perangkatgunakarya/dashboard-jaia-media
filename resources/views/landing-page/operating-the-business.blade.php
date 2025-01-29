@@ -74,7 +74,7 @@
 
         <section id="review">
             <div class="container">
-                <div class="review-wrapper splide" data-aos="fade-left" data-aos-duration="1000">
+                <div class="review-wrapper splide" data-aos="fade-right" data-aos-duration="1000">
                     <div class="review-header">
                         <h2 class="review-title">Words From Our Clients</h2>
                         <div class="splide__arrows arrows review-nav">
