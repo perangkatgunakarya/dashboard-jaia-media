@@ -95,8 +95,7 @@ class ClientResource extends Resource
                 TextColumn::make('segments.name')
                     ->listWithLineBreaks()
                     ->bulleted()
-                    ->searchable()
-                    ->sortable(),
+                    ->searchable(),
                 LinkButtonColumn::make('socmed_url')
                     ->label('Socmed Link')
                     ->alignCenter()
