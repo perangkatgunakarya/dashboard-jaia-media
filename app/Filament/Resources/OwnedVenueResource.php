@@ -100,10 +100,12 @@ class OwnedVenueResource extends Resource
                         TextInput::make('monthly_customer')
                             ->label('Monthly Customer')
                             ->placeholder('Number Monthly Customer')
+                            ->helperText('Number Monthly Customer')
                             ->required(),
                         TextInput::make('daily_revenue')
                             ->label('Daily Revenue')
-                            ->placeholder('Number Daily Revenue (Million)')
+                            ->placeholder('Nominal Daily Revenue (Million)')
+                            ->helperText('Daily Revenue Nominal (in Million)')
                             ->required(),
                     ])
             ]);
