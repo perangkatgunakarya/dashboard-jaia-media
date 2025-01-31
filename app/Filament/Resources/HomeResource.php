@@ -74,9 +74,7 @@ class HomeResource extends Resource
     }
 
     public static function getPages(): array
-    {
-        $home = Home::first();
-        
+    {   
         return [
             'index' => Pages\ListHomes::route('/'),
             'create' => Pages\CreateHome::route('/create'),
