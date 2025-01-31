@@ -3,7 +3,7 @@
 @section('content')
     <main id="media-consulting">
         <section id="jumbotron">
-            <div class="jumbotron-wrapper" style="background-image: url('./public/img/jumbotron/media-consulting.jpeg')">
+            <div class="jumbotron-wrapper" style="background-image: url({{ asset('/img/jumbotron/media-consulting.jpeg') }})">
                 <h1 class="jumbotron-title">JAIA MEDIA CONSULTING</h1>
             </div>
         </section>
