@@ -47,14 +47,14 @@
                     <ul class="statistic-list">
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="500">500</span>
+                                <span class="value" data-counter="{{ $ownedVenue->monthly_customer }}">{{ $ownedVenue->monthly_customer }}</span>
                                 <span class="plus">+</span>
                             </div>
                             <h5 class="title">Monthly<br />Customer</h5>
                         </li>
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="8.5">8.5</span>
+                                <span class="value" data-counter="{{ $ownedVenue->daily_revenue }}">{{ $ownedVenue->daily_revenue }}</span>
                                 <span class="plus">Mil+</span>
                             </div>
                             <h5 class="title">Daily<br />Revenue</h5>

@@ -7,7 +7,7 @@
                 <div class="jumbotron-wrapper" style="background-image: url({{ asset('/img/jumbotron/home.png') }})">
                     <div class="slogan">
                         <div class="slogan-1">AS <span>Busy</span></div>
-                        <div class="slogan-2">AS IS <span>GETS</span></div>
+                        <div class="slogan-2">AS IT'S <span>GETS</span></div>
                     </div>
                     <div class="name-brand">
                         <div>JAIA</div>
@@ -160,28 +160,28 @@
                     <ul class="statistic-list">
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="50">50</span>
+                                <span class="value" data-counter="{{ $home->years_of_expertise }}">{{ $home->years_of_expertise }}</span>
                                 <span class="plus">+</span>
                             </div>
                             <h5 class="title">Years of<br />Expertise</h5>
                         </li>
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="1000">1000</span>
+                                <span class="value" data-counter="{{ $home->successful_campaigns }}">{{ $home->successfl_campaigns }}</span>
                                 <span class="plus">+</span>
                             </div>
                             <h5 class="title">Successful<br />Campaigns</h5>
                         </li>
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="23">23</span>
+                                <span class="value" data-counter="{{ $home->served_clients }}">{{ $home->served_clients }}</span>
                                 <span class="plus">+</span>
                             </div>
                             <h5 class="title">Served<br />Clients</h5>
                         </li>
                         <li class="statistic-item">
                             <div class="counter">
-                                <span class="value" data-counter="80">80</span>
+                                <span class="value" data-counter="{{ $home->positive_testimonials }}">{{ $home->positive_testimonials }}</span>
                                 <span class="plus">+</span>
                             </div>
                             <h5 class="title">Positive<br />Testimonials</h5>

@@ -97,6 +97,14 @@ class OwnedVenueResource extends Resource
                                 return 'venue/' . $get('slug') . '/gallery';
                             })
                             ->required(),
+                        TextInput::make('monthly_customer')
+                            ->label('Monthly Customer')
+                            ->placeholder('Number Monthly Customer')
+                            ->required(),
+                        TextInput::make('daily_revenue')
+                            ->label('Daily Revenue')
+                            ->placeholder('Number Daily Revenue (Million)')
+                            ->required(),
                     ])
             ]);
     }

@@ -86,7 +86,8 @@ class ClientResource extends Resource
             ->columns([
                 TextColumn::make('name')
                     ->label('Name')
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
                 ImageColumn::make('logo_url')
                     ->label('Logo')
                     ->alignCenter()
@@ -94,7 +95,8 @@ class ClientResource extends Resource
                 TextColumn::make('segments.name')
                     ->listWithLineBreaks()
                     ->bulleted()
-                    ->searchable(),
+                    ->searchable()
+                    ->sortable(),
                 LinkButtonColumn::make('socmed_url')
                     ->label('Socmed Link')
                     ->alignCenter()

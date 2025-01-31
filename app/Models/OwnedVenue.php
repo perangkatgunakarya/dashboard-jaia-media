@@ -26,11 +26,20 @@ class OwnedVenue extends Model
         'overview_text',
         'overview_image_url',
         'galleries',
+        'years_of_expertise',
+        'successful_campaigns',
+        'served_clients',
+        'positive_testimonials',
     ];
 
     public function contacts()
     {
         return $this->hasMany(OwnedVenueContact::class);
+    }
+
+    public function statistic()
+    {
+        return $this->hasOne(OwnedVenueStatistic::class);
     }
 
     public function galleries()

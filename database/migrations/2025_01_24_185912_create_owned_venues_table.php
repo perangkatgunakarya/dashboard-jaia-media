@@ -19,7 +19,10 @@ return new class extends Migration
             $table->string('jumbotron_url');
             $table->text('overview_text');
             $table->string('overview_image_url');
+            $table->integer('monthly_customer');
+            $table->decimal('daily_revenue');
             $table->text('galleries');
+
             $table->timestamps();
         });
     }

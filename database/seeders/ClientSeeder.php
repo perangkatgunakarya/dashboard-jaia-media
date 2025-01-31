@@ -70,7 +70,7 @@ class ClientSeeder extends Seeder
             ],
             [
                 'name' => 'MRCL Coffee Studio',
-                'logo_url' => 'client/logo/mrcl-logo.png',
+                'logo_url' => 'client/logo/mrcl-white-logo.png',
                 'background_url' => '',
                 'socmed_url' => 'https://instagram.com/mrclcoffeestudio',
                 'description' => 'This is a dummy description'
@@ -148,8 +148,8 @@ class ClientSeeder extends Seeder
 
             [
                 'name' => 'Mallika',
-                'logo_url' => 'client/logo/malika-logo.png',
-                'background_url' => 'client/logo-background/malika-potarit.jpg',
+                'logo_url' => 'client/logo/mallika-logo.png',
+                'background_url' => 'client/logo-background/mallika-potarit.jpg',
                 'socmed_url' => 'https://instagram.com/mallika.soc',
                 'description' => 'Mallika SOC, a branch of Padma SOC, delivers a cozy brunch experience. With our creative approach, it’s taken the digital world by storm, creating buzz since launch. Our branding strategy has made it a beloved brunch destination for many.',
             ],
@@ -163,32 +163,20 @@ class ClientSeeder extends Seeder
             ]
         ];
         foreach ($businessConsultingClient as $item) {
-            Client::create($item)->segments()->attach([$businessConsulting->id]);
+            if ($item['name'] == 'Mallika' || $item['name'] == "Cepad Makan") {
+                Client::create($item)->segments()->attach([$businessConsulting->id, $operatingTheBusiness->id]);
+            } else {
+                Client::create($item)->segments()->attach([$businessConsulting->id]);
+            }
         }
 
         $operatingTheBusinessClient = [
             [
                 'name' => 'Nightowls.id',
-                'logo_url' => 'client/logo/nightowls-logo.png',
+                'logo_url' => 'client/logo/nightowls-white-logo.png',
                 'background_url' => 'client/logo-background/nightowls-potrait.jpg',
                 'socmed_url' => 'https://www.instagram.com/nightowls.id',
                 'description' => 'Night Owl’s, with its spacious layout and prime location, is the perfect place to gather. We’ve helped optimize its operations and digital strategy, boosting its standing as a top coffeeshop in the area.',
-            ],
-
-            [
-                'name' => 'Malika',
-                'logo_url' => 'client/logo/malika-logo.png',
-                'background_url' => 'client/logo-background/malika-potarit.jpg',
-                'socmed_url' => 'https://www.instagram.com/malika.soc/',
-                'description' => 'Mallika SOC, a branch of Padma SOC, offers a cozy brunch experience. Our creative approach has made it a digital sensation, creating buzz since launch. With a winning branding strategy, it’s now a top brunch favorite for many.',
-            ],
-
-            [
-                'name' => 'Cepad Makan',
-                'logo_url' => 'client/logo/cepadmakansoc-logo.png',
-                'background_url' => 'client/logo-background/cepadmakansoc-potrait.png',
-                'socmed_url' => 'https://www.instagram.com/cepadmakansoc/',
-                'description' => 'Cepad Makan SOC, a sister brand of Padma SOC, delivers the same great menu with a fresh vibe. We’ve built the brand with consistency, ensuring quality and top culinary experiences. Enjoy Padma’s flavors in a new, inviting atmosphere.',
             ],
         ];
 

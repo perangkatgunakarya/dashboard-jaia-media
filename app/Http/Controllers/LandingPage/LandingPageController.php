@@ -4,6 +4,7 @@ namespace App\Http\Controllers\LandingPage;
 
 use App\Http\Controllers\Controller;
 use App\Models\Client;
+use App\Models\Home;
 use App\Models\OwnedVenue;
 use Illuminate\Http\Request;
 
@@ -14,6 +15,7 @@ class LandingPageController extends Controller
         return view('landing-page.index', [
             'title' => 'JAIA Establishment',
             'clients' => Client::all(),
+            'home' => Home::first()
         ]);
     }
 
