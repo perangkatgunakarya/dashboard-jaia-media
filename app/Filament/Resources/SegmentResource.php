@@ -21,6 +21,8 @@ class SegmentResource extends Resource
 
     protected static ?string $navigationGroup = 'Home';
 
+    protected static ?string $navigationLabel = 'Testimonials';
+
     protected static ?string $navigationIcon = 'fas-folder-tree';
 
     public static function form(Form $form): Form
