@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\OwnedVenueTestimonial;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -17,8 +18,10 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             HomeSeeder::class,
             SegmentSeeder::class,
+            SegmentTestimonialSeeder::class,
             ClientSeeder::class,
-            OwnedVenueSeeder::class
+            OwnedVenueSeeder::class,
+            OwnedVenueTestimonialSeeder::class,
         ]);
     }
 }

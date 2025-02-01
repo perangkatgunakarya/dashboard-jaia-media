@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Client;
 use App\Models\Home;
 use App\Models\OwnedVenue;
+use App\Models\Segment;
 use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
@@ -54,6 +55,7 @@ class LandingPageController extends Controller
         return view('landing-page.business-consulting', [
             'title' => 'JAIA Establishment | Business Consulting',
             'clients' => $clients->get(),
+            'testimonials' => Segment::where('name', 'Business Consulting')->first()->testimonials,
         ]);
     }
 
@@ -66,6 +68,7 @@ class LandingPageController extends Controller
         return view('landing-page.operating-the-business', [
             'title' => 'JAIA Establishment | Operating The Business',
             'clients' => $clients->get(),
+            'testimonials' => Segment::where('name', 'Operating The Business')->first()->testimonials,
         ]);
     }
 

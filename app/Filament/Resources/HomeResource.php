@@ -18,6 +18,10 @@ class HomeResource extends Resource
 {
     protected static ?string $model = Home::class;
 
+    protected static ?string $navigationGroup = 'Home';
+
+    protected static ?string $navigationLabel = 'Home';
+
     protected static ?string $navigationIcon = 'fas-house';
 
     public static function form(Form $form): Form

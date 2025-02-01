@@ -72,63 +72,9 @@
             </div>
         </section>
 
-        <section id="review">
+        <section id="testimonial">
             <div class="container">
-                <div class="review-wrapper splide" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="review-header">
-                        <h2 class="review-title">Words From Our Clients</h2>
-                        <div class="splide__arrows arrows review-nav">
-                            <button type="button" class="splide__arrow splide__arrow--prev left-arrow"><i class="fa-solid fa-angles-left"></i></button>
-                            <button type="button" class="splide__arrow splide__arrow--next right-arrow"><i class="fa-solid fa-angles-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="splide__track">
-                        <ul class="review-list splide__list">
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Launching Mallika SOC jadi booming gara-gara ide-ide kreatif dari mereka. Keren banget pokoknya!</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Rini Pramesty</span>
-                                            <span class="company">Mallika</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Tim ini jago banget! Berkat mereka, Han’s Coffee makin dikenal dan rame terus.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Andri</span>
-                                            <span class="company">Han’s Coffee</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Momschik kini menjadi tempat favorit di Wonogiri! Strategi branding yang mereka berikan benar-benar mengubah segalanya."</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Laela Kefasya</span>
-                                            <span class="company">Momschik</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <x-testimonial-carousel :testimonials="$testimonials"></x-testimonial-carousel>
             </div>
         </section>
     </main>
@@ -212,7 +158,7 @@
                 },
             }).mount();
 
-            new Splide('#review .review-wrapper', {
+            new Splide('#testimonial .testimonial-wrapper', {
                 mediaQuery: 'min',
                 breakpoints: {
                     640: {

@@ -17,13 +17,13 @@
                         <p class="introduce-tagline">Your Daily Comfort Food</p>
                         <p class="introduce-detail">Experience unique flavors with our ever-evolving seasonal menu, offering authentic taste in a warm, family-friendly atmosphereExperience unique flavors with our ever-evolving seasonal menu, offering authentic taste in a warm, family-friendly atmosphere.</p>
                         <div class="introduce-socmed">
-                            <a class="socmed-link" href="https://www.instagram.com/padmasoc/">
+                            <a class="socmed-link" target="_blank" href="https://www.instagram.com/padmasoc/">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a class="socmed-link" href="https://www.tiktok.com/@padmasoc?_t=8og5eclhwci&_r=1">
+                            <a class="socmed-link" target="_blank" href="https://www.tiktok.com/@padmasoc?_t=8og5eclhwci&_r=1">
                                 <i class="fa-brands fa-tiktok"></i>
                             </a>
-                            <a class="socmed-link" href="https://maps.app.goo.gl/AFd4kiq77R28YNdYA">
+                            <a class="socmed-link" target="_blank" href="https://maps.app.goo.gl/AFd4kiq77R28YNdYA">
                                 <i class="fa-solid fa-map-pin"></i>
                             </a>
                         </div>
@@ -64,77 +64,11 @@
             </div>
         </section>
 
-        <section id="review">
+        <section id="testimonial">
             <div class="container">
-                <div class="review-wrapper splide" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="review-header">
-                        <h2 class="review-title">Tasteful Stories</h2>
-                        <div class="splide__arrows arrows review-nav">
-                            <button type="button" class="splide__arrow splide__arrow--prev left-arrow"><i class="fa-solid fa-angles-left"></i></button>
-                            <button type="button" class="splide__arrow splide__arrow--next right-arrow"><i class="fa-solid fa-angles-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="splide__track">
-                        <ul class="review-list splide__list">
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Business consulting services helped improve company efficiency and growth through expert analysis and practical solutions</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Andi Pratama</span>
-                                            <span class="company">PT. Sukses Abadi</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Business consulting services enhance company efficiency and growth through expert analysis and practical solutions</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Rina Wijaya</span>
-                                            <span class="company">PT. Maju Bersama</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">By offering expert analysis and actionable strategies, consulting services help businesses improve efficiency and achieve growth.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Dewi Lestari</span>
-                                            <span class="company">PT. PT. Mitra Sejahtera</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="review-item splide__slide">
-                                <div class="review-card">
-                                    <div class="card-content">
-                                        <p class="review">Consulting services for businesses improve operational efficiency and foster growth by providing expert analysis and actionable solutions</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="card-user">
-                                            <span class="name">Budi Santoso</span>
-                                            <span class="company">PT. Karya Sejahtera</span>
-                                        </div>
-                                        <div class="stars" data-value="5"></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <x-testimonial-carousel :testimonials="$ownedVenue->testimonials">
+
+                </x-testimonial-carousel>
             </div>
         </section>
 
@@ -152,7 +86,7 @@
                                 <div class="open-hours">Wed - Mon | 3.00 - 9.00 PM</div>
                             </address>
                             <div class="contact-link">
-                                <button class="contact-button">Let's Chat!</button>
+                                <a class="contact-button" href="https://wa.me/6285600011107" target="_blank">Let's Chat!</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +124,7 @@
                 }
             }).mount();
 
-            new Splide('#review .review-wrapper', {
+            new Splide('#testimonial .testimonial-wrapper', {
                 mediaQuery: 'min',
                 breakpoints: {
                     640: {

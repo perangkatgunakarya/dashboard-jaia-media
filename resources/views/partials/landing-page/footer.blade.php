@@ -30,7 +30,7 @@
                     <div class="address">Jalan Monumen 45 No. 6</div>
                     <div class="district">Setabelan, Banjarsari, Surakarta</div>
                     <div class="province">Jawa Tengah 57131 Indonesia</div>
-                    <div class="email">jaiamedia@gmail.com</div>
+                    <div class="email">jaiamediaconsultant@gmail.com</div>
                     <div class="phone">+62 856-0001-1107</div>
                 </address>
             </div>

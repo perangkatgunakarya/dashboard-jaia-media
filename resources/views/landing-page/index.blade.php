@@ -23,16 +23,15 @@
                     <div class="overview-illustration" data-aos="fade-right" data-aos-duration="1000">
                         <img src="{{ asset('/img/illustrations/overview.jpg') }}" alt="Overview" />
                     </div>
-                    <div class="overview-content">
+                    <div class="overview-content" data-aos="fade-right" data-aos-duration="1000">
                         <h3 class="overview-title">KNOW US MORE</h3>
-                        <div class="overview-main" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="overview-main">
                             <p class="overview-text">JAIA Establishment is a multifaceted holding company dedicated to fostering growth and innovation across diverse sectors. With its headquarters in Central Java, Indonesia, JAIA Establishment is the proud parent company of two dynamic sister entities: a social media consulting firm and a food and beverage (F&B) business.</p>
                             <div class="overview-socmed">
                                 <span></span>
                                 <a class="overview-socmed-link" href="https://www.instagram.com/jaiamedia/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                                 <a class="overview-socmed-link" href="https://www.tiktok.com/@jaia.media?_t=ZS-8sm9518Ab6u&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                                <a class="overview-socmed-link" href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-                                <a class="overview-socmed-link" href="mailto:jaiamedia@gmail.com"><i class="fa-regular fa-envelope" target="_blank"></i></a>
+                                <a class="overview-socmed-link" href="mailto:jaiamediaconsultant@gmail.com"><i class="fa-regular fa-envelope" target="_blank"></i></a>
                             </div>
                         </div>
                         <div class="overview-schedule">

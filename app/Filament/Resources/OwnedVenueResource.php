@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\OwnedVenueResource\Pages;
 use App\Filament\Resources\OwnedVenueResource\RelationManagers;
+use App\Filament\Resources\OwnedVenueResource\RelationManagers\OwnedVenueTestimonialsRelationManager;
 use App\Models\OwnedVenue;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
@@ -25,6 +26,8 @@ use Schmeits\FilamentCharacterCounter\Forms\Components\Textarea;
 class OwnedVenueResource extends Resource
 {
     protected static ?string $model = OwnedVenue::class;
+    
+    protected static ?string $navigationGroup = 'Management';
 
     protected static ?string $navigationIcon = 'far-building';
 
@@ -145,7 +148,7 @@ class OwnedVenueResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            OwnedVenueTestimonialsRelationManager::class,
         ];
     }
 

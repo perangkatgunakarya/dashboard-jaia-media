@@ -30,13 +30,8 @@ class OwnedVenue extends Model
         'daily_revenue',
     ];
 
-    public function contacts()
+    public function testimonials()
     {
-        return $this->hasMany(OwnedVenueContact::class);
-    }
-
-    public function galleries()
-    {
-        return $this->hasMany(OwnedVenueGallery::class);
+        return $this->hasMany(OwnedVenueTestimonial::class);
     }
 }

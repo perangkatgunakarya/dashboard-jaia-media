@@ -175,7 +175,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -279,7 +279,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -383,7 +383,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -487,7 +487,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -565,7 +565,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -607,7 +607,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -643,7 +643,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -711,7 +711,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -745,7 +745,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -827,7 +827,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -897,7 +897,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -967,7 +967,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a class="category-button" href="#">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -1021,7 +1021,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a href="#" class="category-button">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -1080,7 +1080,7 @@
                                                 </div>
 
                                                 <div class="category-footer">
-                                                    <a href="#" class="category-button">Make a call</a>
+                                                    <a class="category-button" href="https://wa.me/6285600011107" target="_blank">Make a call</a>
                                                 </div>
                                             </div>
                                         </li>

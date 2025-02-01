@@ -46,13 +46,13 @@
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </li>
-                <li class="socmed-item">
+                {{-- <li class="socmed-item">
                     <a class="socmed-link" href="#" target="_blank">
                         <i class="fa-brands fa-facebook-square"></i>
                     </a>
-                </li>
+                </li> --}}
                 <li class="socmed-item">
-                    <a class="socmed-link" href="mailto:jaiamedia@gmail.com" target="_blank">
+                    <a class="socmed-link" href="mailto:jaiamediaconsultant@gmail.com" target="_blank">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
                 </li>
